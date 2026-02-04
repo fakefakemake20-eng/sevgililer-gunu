@@ -364,4 +364,20 @@ body.envelope-active .hint {
     z-index: 2;
     opacity: 1;
     transition: opacity 2s ease;
+}.heart-seal {
+    background: url("heart-seal.png") no-repeat center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%   { transform: translateX(-50%) scale(1); }
+    30%  { transform: translateX(-50%) scale(1.15); }
+    60%  { transform: translateX(-50%) scale(1); }
 }

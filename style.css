@@ -471,5 +471,58 @@ body.envelope-active .hint {
       margin: auto;
   }
 }
+/* =========================
+   MOBİL FIX – MEKTUP KAYMASI
+   ========================= */
+@media (max-width: 600px) {
+
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100dvh;
+      overflow: hidden;
+  }
+
+  .envelope {
+      position: relative;
+      transform: none;
+      top: auto;
+      left: auto;
+      margin: 0 auto;
+  }
+
+  /* hover animasyonlarını kapat */
+  .envelope:hover .card,
+  .envelope:hover .card-cover,
+  .envelope:hover .card-wrapper,
+  .envelope:hover .envelope-lid-secondary {
+      transform: none !important;
+      animation: none !important;
+  }
+
+  /* kart mobilde düz çıksın */
+  .card-wrapper {
+      transform: none !important;
+      perspective: none;
+  }
+
+  .card {
+      width: 90%;
+      max-width: 260px;
+      height: auto;
+      margin: 0 auto;
+      transform: none !important;
+  }
+
+  .card-cover {
+      display: none; /* mobilde kapak animasyonu kapalı */
+  }
+
+  .card-body {
+      font-size: 16px;
+      line-height: 1.6;
+  }
+}
 
 

@@ -424,3 +424,9 @@ body.envelope-active .hint {
     text-decoration: none;
     color: #555;
 }
+.second-note {
+    position: relative;
+    z-index: 9999;
+    pointer-events: auto;
+}
+

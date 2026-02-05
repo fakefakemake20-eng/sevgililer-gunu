@@ -454,5 +454,22 @@ body.envelope-active .hint {
   .second-note {
       font-size: 18px;
   }
+}/* === Mobilde zarf kaymasını engelle === */
+@media (max-width: 600px) {
+
+  body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .envelope {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin: auto;
+  }
 }
+
 
